@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-height: 100vh;
+            color: #fff;
+        }
+
+        .bg-image img {
+            width: 100%;
+            height: auto;
+            max-height: 100vh;
+            object-fit: cover;
+        }
+
+        .nav span {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100px;
+            height: 100px;
+
+            svg {
+                width: 48px;
+                height: 48px;
+                color: #fff;
+            }
+        }
+
+        .prev {
+            left: 0;
+            text-align: right;
+        }
+
+        .next {
+            right: 0;
+            text-align: left;
+        }
+
+        .header {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .title {
+            font-size: 4rem;
+            font-weight: 200;
+            line-height: 1;
+        }
+
+        .detail {
+            font-size: 1.8rem;
+            padding: 10px;
+            font-weight: 100;
+            opacity: 0.7;
+
+            a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+
+        .btn {
+            padding: 8px 16px;
+            font-size: 1.4rem;
+            text-decoration: none;
+            color: #fff;
+            border: 2px solid #fff;
+            display: inline-block;
+            width: 200px;
+            text-transform: uppercase;
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="bg-image">
+                <img src="https://tympanus.net/Tutorials/FourBoxes/img/1.jpg" alt="">
+            </div>
+            <div class="nav">
+                <span class="prev">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="m15 19-7-7 7-7" />
+                    </svg>
+                </span>
+                <span class="next">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                        viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="m9 5 7 7-7 7" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+        <div class="header">
+            <h1 class="title">Four Boxes Slideshow</h1>
+            <span class="detail">
+                Recreating the background image slideshow seen on
+                <a href="">Atelier Serge Thoroval's website</a>
+            </span>
+            <div class="box-btn">
+                <a href="" class="btn">Serge Thoroval</a>
+                <a href="" class="btn">Lateral</a>
+                <a href="" class="btn">Fall</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

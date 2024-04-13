@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 62.5%;
+            background-color: #dae9ef;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .header {
+            position: relative;
+            display: flex;
+            align-items: end;
+            flex-direction: column;
+
+            font-size: 3.2rem;
+            font-weight: bold;
+
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+
+            .line {
+                position: absolute;
+                width: 50px;
+                height: 3px;
+                bottom: 0;
+                right: 100px;
+                background-color: #000;
+            }
+        }
+
+
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            display: flex;
+            flex-basis: calc(50% - 10px);
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            .left {
+                width: 40px;
+                background-color: #de5646;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                padding: 14px;
+
+                color: #fff;
+
+                .day {
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                }
+
+                .date {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
+
+            .right {
+                flex: 1;
+                background-color: #fff;
+                padding: 20px;
+
+                .category {
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    color: #d0665a;
+                    margin-bottom: 8px;
+                }
+
+                .title {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .load_more {
+            padding: 10px 14px;
+            font-size: 1.6rem;
+            color: #6095ac;
+            border: 1px solid #6095ac;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 600;
+            border-radius: 100px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="">Upcoming Events</div>
+            <div class="line"></div>
+        </div>
+        <div class="list">
+            <div class="item">
+                <div class="left">
+                    <div class="day">thu</div>
+                    <div class="date">03/20</div>
+                </div>
+                <div class="right">
+                    <div class="category">Empower Hour</div>
+                    <div class="title">Social Media Office Hour</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <div class="day">thu</div>
+                    <div class="date">03/20</div>
+                </div>
+                <div class="right">
+                    <div class="category">Empower Hour</div>
+                    <div class="title">Social Media Office Hour</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <div class="day">thu</div>
+                    <div class="date">03/20</div>
+                </div>
+                <div class="right">
+                    <div class="category">Empower Hour</div>
+                    <div class="title">Social Media Office Hour</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    <div class="day">thu</div>
+                    <div class="date">03/20</div>
+                </div>
+                <div class="right">
+                    <div class="category">Empower Hour</div>
+                    <div class="title">Social Media Office Hour</div>
+                </div>
+            </div>
+        </div>
+        <div class="load_more">
+            See Full Events Calendar
+        </div>
+    </div>
+</body>
+
+</html>

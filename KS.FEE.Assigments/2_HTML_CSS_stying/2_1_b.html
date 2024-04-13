@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+
+        .container {
+            width: 100%;
+            background-color: #fefefe;
+        }
+
+        .list {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 4px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+
+
+            .header-text {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            .header-btn {
+                font-size: 1.4rem;
+                color: blue;
+            }
+        }
+
+        .list-content {
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .item-content {
+            display: flex;
+            gap: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+            &:not(:first-child) {
+                padding-top: 20px;
+            }
+        }
+
+        .item-content--left {
+            align-self: self-start;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 4px;
+            flex: 1;
+            max-width: 120px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+
+
+        }
+
+        .item-content--right {
+            flex: 4;
+
+            .content-title {
+                font-weight: 600;
+                font-size: 1.6rem;
+            }
+
+            .content-date {
+                font-size: 1.2rem;
+                margin-top: 4px;
+                color: #b8b8b8;
+            }
+
+
+        }
+
+        .content-detail {
+            font-size: 1.4rem;
+            margin-top: 4px;
+            color: #a8a8a8;
+
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .tab-wellcome {
+            .content {
+                padding: 20px 0;
+            }
+
+            .img-wrapper {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                margin-bottom: 10px;
+            }
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="list">
+            <div class="item tab-news">
+                <div class="header">
+                    <div class="header-text">News</div>
+                    <div class="header-btn">All News</div>
+                </div>
+                <div class="content">
+                    <div class="list-content">
+                        <div class="item-content">
+                            <div class="item-content--left">
+                                <img src="https://thienphucons.com/wp-content/uploads/2020/01/nh%C3%A0-m%C3%A1i-th%C3%A1i.jpg"
+                                    alt="img-content">
+                            </div>
+                            <div class="item-content--right">
+                                <div class="content-title">Donec convallis accums.an eat. ac intern</div>
+                                <div class="content-date">Feb 14, 2013</div>
+                                <div class="content-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    <a href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-content--left">
+                                <img src="https://thienphucons.com/wp-content/uploads/2020/01/nh%C3%A0-m%C3%A1i-th%C3%A1i.jpg"
+                                    alt="img-content">
+                            </div>
+                            <div class="item-content--right">
+                                <div class="content-title">Donec convallis accums.an eat. ac intern</div>
+                                <div class="content-date">Feb 14, 2013</div>
+                                <div class="content-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    <a href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-content--left">
+                                <img src="https://thienphucons.com/wp-content/uploads/2020/01/nh%C3%A0-m%C3%A1i-th%C3%A1i.jpg"
+                                    alt="img-content">
+                            </div>
+                            <div class="item-content--right">
+                                <div class="content-title">Donec convallis accums.an eat. ac intern</div>
+                                <div class="content-date">Feb 14, 2013</div>
+                                <div class="content-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    <a href="">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item tab-wellcome">
+                <div class="header">
+                    <div class="header-text">Wellcome</div>
+                </div>
+                <div class="content">
+                    <div class="img-wrapper">
+                        <img src="https://th.bing.com/th/id/OIP.57SwJzT-AWYGqTng7C8VQwHaEK?w=333&h=187&c=7&r=0&o=5&pid=1.7"
+                            alt="img-content">
+                    </div>
+                    <div class="content-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ducimus
+                        corporis reiciendis cum voluptate earum natus iure quaerat temporibus doloribus explicabo
+                        necessitatibus animi, pariatur dolore, nemo alias. Molestias, accusamus inventore?
+                    </div>
+                    <div class="content-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ducimus
+                        corporis reiciendis cum voluptate earum natus iure quaerat temporibus doloribus explicabo
+                        necessitatibus animi, pariatur dolore, nemo alias. Molestias, accusamus inventore?
+                    </div>
+                </div>
+            </div>
+            <div class="item ">
+                <div class="header">
+                    <div class="header-text">Agents</div>
+                    <div class="header-btn">All Agents</div>
+                </div>
+                <div class="content">
+                    <div class="list-content">
+                        <div class="item-content">
+                            <div class="item-content--left">
+                                <img src="https://th.bing.com/th/id/OIP.88hQwxL9ILYl7PV_HXgWqgHaE8?w=279&h=187&c=7&r=0&o=5&pid=1.7"
+                                    alt="img-content">
+                            </div>
+                            <div class="item-content--right">
+                                <div class="content-title">Jason Clint</div>
+                                <div class="content-detail">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit.
+                                </div>
+                                <a href="">Contact agent</a>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-content--left">
+                                <img src="https://thienphucons.com/wp-content/uploads/2020/01/nh%C3%A0-m%C3%A1i-th%C3%A1i.jpg"
+                                    alt="img-content">
+                            </div>
+                            <div class="item-content--right">
+                                <div class="content-title" Jessica Almain</div>
+                                    <div class="content-detail">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                        elit.
+                                    </div>
+                                </div>
+                                <a href="">Contact agent</a>
+                            </div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-content--left">
+                                <img src="https://th.bing.com/th/id/OIP.RG0IdyCdCS-77N9lYVRoeAHaE7?w=303&h=202&c=7&r=0&o=5&pid=1.7"
+                                    alt="img-content">
+                            </div>
+                            <div class="item-content--right">
+                                <div class="content-title">Dexter Lobters</div>
+                                <div class="content-detail">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit.
+                                </div>
+                                <a href="">Contact agent</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>

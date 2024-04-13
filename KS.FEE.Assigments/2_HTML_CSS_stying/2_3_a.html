@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            gap: 20px;
+            padding: 20px;
+            background-color: #eba102;
+            color: #fff;
+        }
+
+        .header {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .content {
+            font-size: 1.5rem;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+
+            input {
+                padding: 10px;
+                border: none;
+                outline: none;
+            }
+
+            .name,
+            .email {
+                flex-basis: calc(50% - 20px);
+                margin-bottom: 20px;
+            }
+
+            .name {
+                margin-right: 20px;
+            }
+
+            .email {
+                margin-left: 20px;
+            }
+
+            .subject,
+            .message {
+                flex-basis: 100%;
+                margin-bottom: 10px;
+            }
+
+            .submit {
+                flex-basis: 40%;
+                background-color: #2e2e2e;
+                color: #fff;
+                cursor: pointer;
+                text-transform: uppercase;
+                margin-top: 10px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="header">About us</div>
+            <div class="content">
+                KeyRevenueAdz is able to boost
+                traffic to your website with
+                thousands of real human
+                instantly,you will get patd With
+                stable and safe service with us,all
+                member are benefit from long-term
+                revenue sharing plan.
+            </div>
+        </div>
+        <div class="col">
+            <div class="header">Better plans</div>
+            <div class="content">
+                No risk for the plan ,because our
+                benefit are earn from high quality
+                advertising plan. Help our members
+                to eam easy and Risk-free from
+                KeyRevenueAdz.
+            </div>
+        </div>
+        <div class="col">
+            <div class="header">Get in touch</div>
+            <form action="">
+                <input class="name" type="text" placeholder="Name">
+                <input class="email" type="email" placeholder="Email Address">
+                <input class="subject" type="text" placeholder="Subject">
+                <input class="message" type="text" placeholder="Your Message">
+                <input class="submit" type="submit" value="submit your mesage">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
