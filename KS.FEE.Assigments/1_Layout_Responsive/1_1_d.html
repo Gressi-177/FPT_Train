@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 40px 140px;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: calc(100vh - 80px);
+            gap: 20px;
+        }
+
+        header {
+            background-color: #ccc;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .large-feature {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+            flex: 4;
+            margin: 0 -140px;
+        }
+
+        .sub-header {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 20px;
+            flex: 2;
+        }
+
+        .image {
+            flex: 1;
+            background-color: #333;
+        }
+
+        .supporting-content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .supporting-content div {
+            flex: 1;
+            background-color: #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>NAVIGATION</h1>
+        </header>
+        <main>
+            <section class="large-feature">
+                <h2>LARGE FEATURE</h2>
+            </section>
+            <section class="sub-header">
+                <h3>SUB-HEADER</h3>
+            </section>
+            <section class="image-container">
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </section>
+            <section class="supporting-content">
+                <div>
+                    <h4>Hỗ trợ 1</h4>
+                </div>
+                <div>
+                    <h4>Hỗ trợ 2</h4>
+                </div>
+                <div>
+                    <h4>Hỗ trợ 3</h4>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

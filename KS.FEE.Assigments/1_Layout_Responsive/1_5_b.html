@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            padding-top: 20px;
+            background-color: #5995da;
+        }
+
+        .header,
+        .content,
+        .signup,
+        .feature {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header {
+            background-color: #b2d6ff;
+        }
+
+        .content {
+            background-color: #eaedf0;
+            grid-row: 2 /span 2;
+        }
+
+        .signup {
+            background-color: #d6e9fe;
+        }
+
+        .feature {
+            &:nth-last-child(3) {
+                background-color: #f5cf8e;
+            }
+
+            &:nth-last-child(2) {
+                background-color: #f09a9d;
+            }
+
+            &:nth-last-child(1) {
+                background-color: #c8c6fa;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .header {
+                grid-column: 1 / span 2;
+            }
+
+            .content {
+                grid-column: 1 / span 2;
+            }
+
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .signup {
+                grid-column: 1;
+            }
+
+            .feature {
+                &:nth-last-child(3) {
+                    grid-column: 2;
+
+                }
+
+                &:nth-last-child(2) {
+                    grid-column: 1;
+
+                }
+
+                &:nth-last-child(1) {
+                    grid-column: 2;
+
+                }
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            .header {
+                grid-column: 1 / span 3;
+            }
+
+            .content {
+                grid-column: 1 / span 3;
+                grid-row: 4 / span 3;
+            }
+
+            .signup {
+                grid-column: 1 / span 3;
+            }
+
+
+            .feature {
+                grid-row: 2;
+
+                &:nth-last-child(3) {
+                    grid-column: 1;
+                }
+
+                &:nth-last-child(2) {
+
+                    grid-column: 2;
+                }
+
+                &:nth-last-child(1) {
+                    grid-column: 3;
+
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="content">Content</div>
+        <div class="signup">Sign up</div>
+        <div class="feature">Feature</div>
+        <div class="feature">Feature</div>
+        <div class="feature">Feature</div>
+    </div>
+</body>
+
+</html>
